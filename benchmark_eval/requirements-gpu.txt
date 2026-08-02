@@ -1,0 +1,9 @@
+-r requirements.txt
+torch==2.7.1
+torchvision==0.22.1
+transformers>=4.56,<5
+mineru-vl-utils[transformers]==1.0.5
+vllm==0.10.1.1
+xformers==0.0.31
+bert-score==0.3.13
+loguru>=0.7,<1
