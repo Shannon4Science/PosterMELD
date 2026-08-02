@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="../docs/readme/postermeld-logo.svg" width="118" alt="PosterMELD logo" />
+
   <h1>PosterMELD</h1>
 
   <p><strong>Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity<br />with Editable Print-Ready Outputs</strong></p>
@@ -27,6 +29,10 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-17233A?style=flat-square" alt="MIT License" /></a>
   </p>
 </div>
+
+<p align="center">
+  <img src="../docs/readme/teaser.png" width="100%" alt="PosterMELD compared with P2P, PosterGen, and a coding-agent workflow" />
+</p>
 
 <p align="center">
   <sub>
@@ -59,6 +65,10 @@ Evaluated end-to-end on **621 papers**, PosterMELD achieves:
 
 ## Method
 
+<p align="center">
+  <img src="../docs/readme/framework.png" width="100%" alt="PosterMELD agent-skill generation pipeline" />
+</p>
+
 PosterMELD follows a structure-first, quality-guided pipeline:
 
 1. **Parse and ground.** MinerU extracts text, figures, tables, formulas, and document structure; Marker remains available as a fallback backend.
@@ -71,11 +81,19 @@ Every run records its controls, provenance, latency, token usage, repair history
 
 ### Template library
 
+<p align="center">
+  <img src="../docs/readme/template-construction.png" width="96%" alt="PosterMELD template library construction from real posters" />
+</p>
+
 The repository includes **16 landscape** and **8 portrait** templates mined from real poster topologies. A template describes structure rather than content. Runtime geometry can absorb small gaps while preserving page bounds, reading order, and non-overlap constraints.
 
 PosterMELD also provides `adaptive_auto`, a template-independent adaptive layout mode for papers that do not fit a standard topology.
 
 ## Benchmark
+
+<p align="center">
+  <img src="../docs/readme/benchmark-composition.png" width="72%" alt="Composition of the 621-paper PosterMELD benchmark" />
+</p>
 
 The benchmark contains **621 papers**, covering **14 publication-source groups** and **10 research domains**. Each method is evaluated at the request level, so failed or missing generations remain in the denominator.
 
@@ -92,6 +110,10 @@ The benchmark contains **621 papers**, covering **14 publication-source groups**
 > **Metric scope.** PRR measures request-level artifact validity. CHE averages Craftsmanship, Harmony, and Expressiveness only over print-ready outputs. Universal scores missing generations as zero. Cost includes failed requests and all generation-internal model calls.
 
 ### Qualitative comparison
+
+<p align="center">
+  <img src="../docs/readme/case-study.png" width="100%" alt="Qualitative comparison of P2P, PosterGen, GPT-Image-2, and PosterMELD on five papers" />
+</p>
 
 Across five research areas, PosterMELD varies template topology, palette, and text-figure allocation while preserving native editability. The full-resolution comparison is also available on the [project page](https://jackey0903.github.io/PosterMELD/).
 
