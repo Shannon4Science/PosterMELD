@@ -1,7 +1,0 @@
-numpy
-scipy
-scikit-learn
-matplotlib
-pillow
-pyyaml
-shapely
