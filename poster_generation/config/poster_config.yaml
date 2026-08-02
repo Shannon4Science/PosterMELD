@@ -1,0 +1,1178 @@
+# poster layout configuration
+
+layout:
+  # dimensions (inches)
+  poster_margin: 1.0
+  column_spacing: 1.0
+  title_height_fraction: 0.18     # fraction of ( title height / effective height)
+  
+  # spacing
+  section_spacing: 1.0
+  element_spacing: 0.2
+  title_to_content_spacing: 0.4
+  
+  # padding
+  text_padding:
+    left_right: 0.3
+    top_bottom: 0.3
+  
+  # visual elements
+  visual_spacing:
+    below_visual: 0.3
+    side_padding: 0.3
+
+typography:
+  fonts:
+    title: "Helvetica Neue"
+    authors: "Arial"
+    section_title: "Helvetica Neue"
+    body_text: "Arial"
+  
+  sizes:  # points
+    title: 100
+    authors: 72
+    section_title: 64
+    body_text: 44
+    min_font_size: 36
+  
+  line_spacing: 1.0
+  paragraph_spacing: 0.0
+  title_author_gap_points: 16
+
+header_planner:
+  enabled: true
+  default_route: "auto"
+  allowed_routes: ["classic_left", "centered", "right_title", "split_logos"]
+  subtitle_policy: "auto"
+  subtitle_probability: 0.5
+  auto_subtitle_max_chars: 52
+  auto_subtitle_max_words: 7
+  short_title_max_chars: 82
+  short_title_max_words: 11
+  subtitle_max_chars: 86
+  portrait_subtitle_max_chars: 62
+  title_logo_gap_inches: 0.28  # compact visual gap; the planner expands the title box to the
+                               # actual logo bounds instead of keeping an oversized reserved zone
+  min_title_logo_gap_inches: 0.20
+  min_title_width_fraction: 0.56
+  max_logo_header_fraction: 0.78
+  hard_max_logo_header_fraction: 0.88
+  max_logo_zone_width_fraction: 0.38
+  landscape_combined_logo_zone_fraction: 0.27
+  landscape_multi_affiliation_logo_zone_fraction: 0.30
+  landscape_single_logo_zone_fraction: 0.24
+  logo_resize_check_enabled: true
+  preferred_affiliation_logo_scale: 1.50
+  preferred_conference_logo_scale: 1.0
+  min_effective_logo_area_ratio: 1.08
+  conservative_logo_scale: 0.82
+  subtitle_title_scale: 0.94
+  subtitle_font_scale: 0.58
+  portrait_subtitle_font_scale: 0.78
+  subtitle_fit_avg_char_width_em: 0.50
+  portrait_subtitle_fit_avg_char_width_em: 0.52
+  title_subtitle_gap_inches: 0.10
+  title_wrap_policy: "auto"
+  force_single_line_title: true
+  title_fit_avg_char_width_em: 0.52
+  portrait_title_fit_avg_char_width_em: 0.56
+  wrapped_title_fit_avg_char_width_em: 0.48
+  portrait_wrapped_title_fit_avg_char_width_em: 0.40
+  title_fit_width_safety: 0.98
+  portrait_title_fit_width_safety: 0.94
+  title_single_line_min_font_size: 34
+  portrait_title_single_line_min_font_size: 32
+  portrait_wrapped_title_min_font_size: 44
+  subtitle_single_line_min_font_size: 24
+  single_line_title_gate_min_font_size: 42
+  portrait_single_line_title_gate_min_font_size: 40
+  landscape_title_font_size: 100
+  landscape_author_font_size: 58
+  large_landscape_title_font_size: 108
+  large_landscape_author_font_size: 50
+  portrait_title_font_size: 72
+  portrait_author_font_size: 56
+  portrait_title_author_gap_inches: 0.42
+  portrait_title_line_height_em: 1.00
+  portrait_author_line_height_em: 1.04
+  portrait_author_max_lines: 2
+  portrait_author_min_font_size: 46
+  portrait_max_affiliation_logos: 2
+  portrait_logo_strip_height_fraction: 0.30
+  portrait_logo_strip_max_height_fraction: 0.40
+  portrait_logo_strip_min_height_inches: 1.25
+  portrait_min_title_height_inches: 3.75
+  portrait_logo_title_gap_inches: 0.14
+  portrait_conf_zone_fraction: 0.34
+  portrait_logo_divider_gap_inches: 0.18
+  portrait_max_logo_height: 2.55
+  portrait_logo_strip_max_logo_fraction: 0.88
+  portrait_allow_split_logos: true
+  portrait_split_logo_side_width_fraction: 0.18
+  portrait_split_logo_max_side_width_fraction: 0.24
+  portrait_split_wide_conference_aspect_threshold: 3.0
+  portrait_split_wide_conference_side_width_fraction: 0.22
+  portrait_split_logo_min_side_width_inches: 4.0
+  portrait_split_title_logo_gap_inches: 0.34
+  portrait_split_title_vertical_offset_inches: 0.55
+  manual_affiliation_logo_overrides_auto: true
+  stable_random_by_default: false
+
+header_block_review:
+  enabled: true
+  crop_margin_inches: 0.18
+  target_subtitle_title_ratio: 0.64
+  min_subtitle_title_ratio: 0.54
+  max_subtitle_title_ratio: 0.74
+  subtitle_box_line_height: 1.12
+  title_subtitle_gap_inches: 0.10
+  use_header_author_gap: true
+  vlm_enabled: true
+  vlm_author_gap_increment_inches: 0.10
+  max_author_gap_inches: 0.50
+
+default_poster_style: "navy_serif"
+poster_style_presets:
+  navy_serif:
+    label: "Navy Serif"
+    color_scheme: {}
+    typography:
+      fonts:
+        title: "Georgia"
+        authors: "Arial"
+        section_title: "Georgia"
+        body_text: "Arial"
+    poster_visual_style:
+      main_title:
+        font_family: "Georgia"
+        font_color: "#07164A"
+        author_font_family: "Arial"
+        author_font_color: "#111111"
+      section_title:
+        font_family: "Georgia"
+        font_color: "#FFFFFF"
+        bar_fill_color: "#06134A"
+      block_panel:
+        fill_color: "#F1F2F4"
+        border_color: "#E5E7EE"
+  teal_modern:
+    label: "Teal Modern"
+    color_scheme:
+      theme: "#0F766E"
+      mono_light: "#E6F2F0"
+      mono_dark: "#0B4F5C"
+      text: "#111827"
+      text_on_theme: "#FFFFFF"
+      contrast: "#0B4F5C"
+    typography:
+      fonts:
+        title: "Helvetica Neue"
+        authors: "Arial"
+        section_title: "Helvetica Neue"
+        body_text: "Arial"
+    poster_visual_style:
+      main_title:
+        font_family: "Helvetica Neue"
+        font_color: "#0B2F36"
+        author_font_family: "Arial"
+        author_font_color: "#27343A"
+      section_title:
+        font_family: "Helvetica Neue"
+        font_color: "#FFFFFF"
+        bar_fill_color: "#0B4F5C"
+      block_panel:
+        fill_color: "#F3F8F7"
+        border_color: "#D5E7E4"
+  burgundy_classic:
+    label: "Burgundy Classic"
+    color_scheme:
+      theme: "#7A1F2B"
+      mono_light: "#F5ECEE"
+      mono_dark: "#5A1420"
+      text: "#151515"
+      text_on_theme: "#FFFFFF"
+      contrast: "#7A1F2B"
+    typography:
+      fonts:
+        title: "Georgia"
+        authors: "Arial"
+        section_title: "Georgia"
+        body_text: "Arial"
+    poster_visual_style:
+      main_title:
+        font_family: "Georgia"
+        font_color: "#4A1020"
+        author_font_family: "Arial"
+        author_font_color: "#211517"
+      section_title:
+        font_family: "Georgia"
+        font_color: "#FFFFFF"
+        bar_fill_color: "#5A1420"
+      block_panel:
+        fill_color: "#F6F0F1"
+        border_color: "#E8D7DB"
+
+default_visual_density: "balanced"
+section_title_numbering: "off"
+visual_density_presets:
+  lean:
+    label: "Lean"
+    figure_count: 1
+    table_count: 1
+    max_visuals_total: 2
+    portrait_figure_count: 1
+    portrait_table_count: 0
+    portrait_max_visuals_total: 1
+  balanced:
+    label: "Balanced"
+    figure_count: 2
+    table_count: 2
+    max_visuals_total: 4
+    portrait_figure_count: 1
+    portrait_table_count: 1
+    portrait_max_visuals_total: 2
+  rich:
+    label: "Rich"
+    figure_count: 3
+    table_count: 2
+    max_visuals_total: 5
+    portrait_figure_count: 2
+    portrait_table_count: 1
+    portrait_max_visuals_total: 3
+
+colors:
+  # defaults
+  fallback_theme: "#1E3A8A"
+  fallback_text: "#000000"
+  fallback_background: "#FFFFFF"
+  
+  # color variants
+  mono_light:
+    saturation: 0.04              # 4%
+    brightness: 0.94              # 94%
+  
+  mono_dark:
+    saturation_range: [0.5, 0.6]
+    saturation_default: 0.6
+  
+  contrast_color:
+    saturation: 0.85
+    brightness_start: 0.50
+    brightness_step: 0.05
+    brightness_max: 0.90
+    wcag_contrast_ratio: 4.5      # WCAG AA standard
+    
+  complementary:
+    hue_offset: 0.5               # 180 degrees
+    intensity_reduction: 0.7
+    
+  # adjustments
+  saturation_adjustments:
+    light_increase: 0.3
+    light_brightness: 0.25
+    dark_decrease: 0.2
+    contrast_saturation: 0.6
+    contrast_brightness: 0.75
+  
+  # hsv bounds
+  hsv_bounds:
+    saturation_min: 0.2
+    saturation_max: 1.0
+    brightness_min: 0.2
+    brightness_max: 1.0
+    
+  # srgb gamma
+  srgb:
+    gamma_threshold: 0.03928
+    gamma_divisor: 1.055
+    gamma_offset: 0.055
+    gamma_exponent: 2.4
+    
+  # luminance weights (BT.709)
+  luminance_weights:
+    red: 0.2126
+    green: 0.7152
+    blue: 0.0722
+  
+  # color constants
+  constants:
+    max_rgb: 255
+    white_rgb: [255, 255, 255]
+    black_text: "#000000"
+    white_text: "#FFFFFF"
+    brightness_threshold: 128
+    gamma_linear_divisor: 12.92
+    # perceived brightness weights
+    red_weight: 299
+    green_weight: 587
+    blue_weight: 114
+    brightness_divisor: 1000
+
+text_measurement:
+  # binary search
+  min_height: 0.1                 # inches
+  max_height: 20.0                # inches
+  precision: 0.001
+  
+  # margins (must match renderer)
+  margins:
+    left: 0.3
+    right: 0.3
+    top: 0.3
+    bottom: 0.3
+  
+  newline_offset_ratio: 1.0       # font_size/72 per newline
+
+pdf_processing:
+  backend: "mineru"
+  fallback_backend: "marker"
+  mineru:
+    base_url: "https://mineru.net"
+    model_version: "vlm"
+    language: "en"
+    enable_table: true
+    enable_formula: true
+    is_ocr: false
+    request_timeout_seconds: 60
+    poll_interval_seconds: 5
+    poll_timeout_seconds: 900
+
+  # for marker PDF converter fallback
+  batch_sizes:
+    recognition: 4
+    layout: 4
+    detection: 4
+    table_rec: 4
+    ocr_error: 4
+    equation: 4
+  
+  max_section_words: 1000
+
+rendering:
+  logo_spacing: 0.5               # inches
+  logo_margin: 0.2
+  debug_borders: False
+  slide_layout_index: 6           # blank slide
+  default_shape_fill: "#FFFFFF"
+  section_title_chars_per_inch_at_48pt: 3.1
+
+poster_visual_style:
+  enabled: true
+  main_title:
+    font_family: "Georgia"
+    font_color: "#07164A"
+    author_font_family: "Arial"
+    author_font_color: "#111111"
+    shadow:
+      enabled: true
+      color: "#AEB5CC"
+      offset_x_inches: 0.035
+      offset_y_inches: 0.035
+  portrait_header_main_title:
+    enabled: true
+    font_family: "Georgia"
+    font_color: "#4A1020"
+    author_font_family: "Arial"
+    author_font_color: "#211517"
+    shadow:
+      enabled: true
+      color: "#D8B7BE"
+      offset_x_inches: 0.035
+      offset_y_inches: 0.035
+  portrait_header_section_title:
+    enabled: true
+    font_family: "Georgia"
+    font_weight: "bold"
+    font_color: "#FFFFFF"
+    shadow:
+      enabled: true
+      color: "#9FB7BC"
+      offset_x_inches: 0.025
+      offset_y_inches: 0.025
+  section_title:
+    font_family: "Georgia"
+    font_size: 48
+    font_weight: "bold"
+    font_color: "#FFFFFF"
+    alignment: "center"
+    bar_fill_color: "#06134A"
+    bar_height_inches: 0.78
+    horizontal_padding_inches: 0.28
+    vertical_padding_inches: 0.04
+    small_number_font_scale: 0.62
+    small_number_width_inches: 0.46
+    small_number_gap_inches: 0.12
+    shadow:
+      enabled: true
+      color: "#B4BDD8"
+      offset_x_inches: 0.02
+      offset_y_inches: 0.02
+  block_panel:
+    enabled: true
+    fill_color: "#F1F2F4"
+    border_color: "#E5E7EE"
+    border_width: 0.25
+    border_style: "solid"
+    shadow:
+      enabled: true
+      color: "#000000"
+      alpha: 0.16
+      blur_pt: 5
+      distance_pt: 2.4
+      angle: 45
+    generated_background_overlay:
+      enabled: true
+      fill_color: "#FFFFFF"
+      fill_opacity: 0.64
+      border_color: "#D8DEE7"
+      border_opacity: 0.44
+      border_width: 0.45
+      border_style: "solid"
+      shadow:
+        enabled: true
+        color: "#000000"
+        alpha: 0.03
+        blur_pt: 1.6
+        distance_pt: 0.7
+        angle: 45
+
+selective_block_backgrounds:
+  enabled: true
+  frame_all_blocks: false
+  max_highlight_blocks: 0
+  primary_fill_color: "#EEF0F2"
+  primary_border_color: ""
+  primary_border_width: 0
+  primary_border_style: "solid"
+  normal_border_color: "#D2D6DC"
+  normal_border_width: 0.7
+  normal_border_style: "solid"
+  support_border_color: "#D8DDE3"
+  support_border_width: 0.7
+  support_border_style: "dashed"
+  support_section_keywords:
+    - "setup"
+    - "setting"
+    - "background"
+    - "robustness"
+    - "ablation"
+    - "limitation"
+    - "takeaway"
+  role_priority:
+    results: 120
+    main_results: 120
+    method: 110
+    framework: 110
+    overview: 80
+    problem: 75
+    motivation: 75
+    takeaway: 70
+  visual_bonus: 8
+  large_slot_bonus: 8
+
+generated_background:
+  enabled: false
+  procedural_only: false
+  allow_procedural_fallback: false
+  validation_retry_attempts: 3
+  width_px: 1440
+  height_px: 2035
+  style: "auto"
+  palette: "auto"
+  white_overlay_alpha: 0.28
+  blur_radius: 0.75
+  max_saturation: 0.66
+  visibility_floor:
+    enabled: true
+    min_average_distance_from_white: 15.0
+    min_channel_stddev: 8.0
+    max_boost_factor: 5.0
+  api_timeout_seconds: 0
+  ocr_timeout_seconds: 15
+  ocr_min_confidence: 45
+  prompt_style: "premium top-tier AI conference poster background, polished and readable"
+  output_filename: "generated_background.png"
+  styles:
+    minimal_solid:
+      label: "Minimal Solid"
+      default_palette: "light_gray"
+      prompt: "very subtle solid-color academic paper texture, barely visible edge washes, quiet premium whitespace, no decorative motifs in content regions"
+      postprocess:
+        white_overlay_alpha: 0.48
+        blur_radius: 0.35
+        max_saturation: 0.44
+        min_average_distance_from_white: 9.0
+        min_channel_stddev: 4.0
+        max_boost_factor: 2.2
+    tech_grid:
+      label: "Technology Grid"
+      default_palette: "light_blue"
+      prompt: "thin technical grid lines, faint circuit-like paths, translucent data-network traces, soft cyan and blue-gray geometry concentrated near margins and gutters"
+      postprocess:
+        white_overlay_alpha: 0.24
+        blur_radius: 0.55
+        max_saturation: 0.68
+    academic_paper:
+      label: "Academic Paper"
+      default_palette: "light_blue"
+      prompt: "refined academic conference-paper texture, pale geometric washes, subtle diagonal bands, restrained editorial layout atmosphere, no fake panels"
+      postprocess:
+        white_overlay_alpha: 0.28
+        blur_radius: 0.65
+        max_saturation: 0.62
+    cartographic:
+      label: "Cartographic"
+      default_palette: "mint"
+      prompt: "faint cartographic contour lines, parcel-like region boundaries, route fields, map-grid texture, soft spatial search motifs kept abstract and non-readable"
+      postprocess:
+        white_overlay_alpha: 0.24
+        blur_radius: 0.45
+        max_saturation: 0.66
+    flat_cartoon:
+      label: "Flat Editorial"
+      default_palette: "warm_ivory"
+      prompt: "soft flat editorial illustration style, rounded abstract shapes, friendly but professional color fields, no characters, no faces, no icons, no childish elements"
+      postprocess:
+        white_overlay_alpha: 0.34
+        blur_radius: 0.80
+        max_saturation: 0.60
+    blueprint:
+      label: "Blueprint"
+      default_palette: "light_blue"
+      prompt: "pale blueprint-like construction lines, algorithmic flow traces, faint schematic geometry, theorem/proof atmosphere, no labels and no axis-like diagrams"
+      postprocess:
+        white_overlay_alpha: 0.30
+        blur_radius: 0.48
+        max_saturation: 0.62
+    geometric_soft:
+      label: "Soft Geometry"
+      default_palette: "lavender"
+      prompt: "soft translucent geometric planes, gentle oblique color fields, low-contrast conference-poster composition, restrained modern academic backdrop"
+      postprocess:
+        white_overlay_alpha: 0.32
+        blur_radius: 0.70
+        max_saturation: 0.62
+  palettes:
+    light_blue:
+      label: "pale blue-gray"
+      base: [250, 252, 255]
+      edge: [225, 236, 247]
+      line: [0, 87, 184, 38]
+      node: [0, 87, 184, 44]
+      neutral: [116, 132, 150, 34]
+    light_gray:
+      label: "pale neutral gray"
+      base: [250, 250, 249]
+      edge: [229, 231, 234]
+      line: [118, 128, 140, 22]
+      node: [95, 105, 118, 26]
+      neutral: [138, 146, 156, 22]
+    warm_ivory:
+      label: "warm ivory"
+      base: [253, 250, 244]
+      edge: [241, 232, 217]
+      line: [178, 121, 76, 24]
+      node: [150, 96, 66, 28]
+      neutral: [132, 122, 108, 22]
+    mint:
+      label: "pale mint and blue-gray"
+      base: [248, 253, 251]
+      edge: [221, 240, 234]
+      line: [20, 121, 111, 30]
+      node: [15, 118, 110, 34]
+      neutral: [93, 120, 132, 24]
+    lavender:
+      label: "pale lavender-gray"
+      base: [251, 250, 255]
+      edge: [233, 229, 247]
+      line: [93, 76, 166, 28]
+      node: [93, 76, 166, 32]
+      neutral: [124, 116, 146, 22]
+    rose:
+      label: "pale rose-gray"
+      base: [255, 250, 251]
+      edge: [246, 229, 233]
+      line: [170, 56, 86, 24]
+      node: [150, 48, 78, 28]
+      neutral: [135, 112, 120, 22]
+    amber:
+      label: "pale amber-gray"
+      base: [255, 252, 246]
+      edge: [246, 236, 212]
+      line: [174, 116, 30, 24]
+      node: [154, 103, 24, 28]
+      neutral: [132, 122, 100, 22]
+
+standard_template_policy:
+  enabled: true
+  auto_templates:
+    - "cluster_2_landscape"
+    - "cluster_6_landscape"
+    - "cluster_14_landscape"
+    - "cluster_16_landscape"
+    - "cluster_27_landscape"
+    - "cluster_36_landscape"
+    - "cluster_39_landscape"
+    - "cluster_43_landscape"
+    - "cluster_46_landscape"
+    - "cluster_62_landscape"
+    - "cluster_69_landscape"
+    - "cluster_70_landscape"
+    - "cluster_85_landscape"
+    - "cluster_86_landscape"
+    - "cluster_96_landscape"
+    - "cluster_104_landscape"
+    - "cluster_3_portrait"
+    - "cluster_8_portrait"
+    - "cluster_13_portrait"
+    - "cluster_15_portrait"
+    - "cluster_22_portrait"
+    - "cluster_25_portrait"
+    - "cluster_27_portrait"
+    - "cluster_29_portrait"
+  landscape_templates:
+    - "cluster_2_landscape"
+    - "cluster_6_landscape"
+    - "cluster_14_landscape"
+    - "cluster_16_landscape"
+    - "cluster_27_landscape"
+    - "cluster_36_landscape"
+    - "cluster_39_landscape"
+    - "cluster_43_landscape"
+    - "cluster_46_landscape"
+    - "cluster_62_landscape"
+    - "cluster_69_landscape"
+    - "cluster_70_landscape"
+    - "cluster_85_landscape"
+    - "cluster_86_landscape"
+    - "cluster_96_landscape"
+    - "cluster_104_landscape"
+  portrait_templates:
+    - "cluster_3_portrait"
+    - "cluster_8_portrait"
+    - "cluster_13_portrait"
+    - "cluster_15_portrait"
+    - "cluster_22_portrait"
+    - "cluster_25_portrait"
+    - "cluster_27_portrait"
+    - "cluster_29_portrait"
+  adaptive_auto_templates:
+    - "three_column_postergen"
+    - "two_plus_one_mixed"
+    - "one_plus_two_mixed"
+  dense_section_threshold: 6
+  dense_visual_threshold: 3
+  default_standard_landscape_template: "cluster_43_landscape"
+  default_dense_landscape_template: "cluster_104_landscape"
+  default_visual_landscape_template: "cluster_43_landscape"
+  default_light_landscape_template: "cluster_2_landscape"
+  default_dense_portrait_template: "cluster_3_portrait"
+  default_light_portrait_template: "cluster_8_portrait"
+  soft_geometry:
+    enabled: true
+    templates:
+      - "cluster_2_landscape"
+      - "cluster_6_landscape"
+      - "cluster_14_landscape"
+      - "cluster_16_landscape"
+      - "cluster_27_landscape"
+      - "cluster_36_landscape"
+      - "cluster_39_landscape"
+      - "cluster_43_landscape"
+      - "cluster_46_landscape"
+      - "cluster_62_landscape"
+      - "cluster_69_landscape"
+      - "cluster_70_landscape"
+      - "cluster_85_landscape"
+      - "cluster_86_landscape"
+      - "cluster_96_landscape"
+      - "cluster_104_landscape"
+      - "cluster_3_portrait"
+      - "cluster_8_portrait"
+      - "cluster_13_portrait"
+      - "cluster_15_portrait"
+      - "cluster_22_portrait"
+      - "cluster_25_portrait"
+      - "cluster_27_portrait"
+      - "cluster_29_portrait"
+    min_gutter_inches: 0.12
+    max_absorption_inches: 0.35
+
+adaptive_auto_dense_layout:
+  enabled: true
+  poster_margin: 0.70
+  column_spacing: 0.18
+  max_column_gap_inches: 0.20
+
+template_fast_mode:
+  enabled: true
+  semantic_capacity_rewrite: true
+  templates:
+    - "cluster_2_landscape"
+    - "cluster_6_landscape"
+    - "cluster_14_landscape"
+    - "cluster_16_landscape"
+    - "cluster_27_landscape"
+    - "cluster_36_landscape"
+    - "cluster_39_landscape"
+    - "cluster_43_landscape"
+    - "cluster_46_landscape"
+    - "cluster_62_landscape"
+    - "cluster_69_landscape"
+    - "cluster_70_landscape"
+    - "cluster_85_landscape"
+    - "cluster_86_landscape"
+    - "cluster_96_landscape"
+    - "cluster_104_landscape"
+    - "cluster_3_portrait"
+    - "cluster_8_portrait"
+    - "cluster_13_portrait"
+    - "cluster_15_portrait"
+    - "cluster_22_portrait"
+    - "cluster_25_portrait"
+    - "cluster_27_portrait"
+    - "cluster_29_portrait"
+  emergency_repair_max_iterations: 4
+  hard_min_utilization: 0.96
+  emergency_underfill_threshold: 0.92
+  allow_text_fill_repair: true
+  fast_text_fill_max_extra_chars: 280
+  visual_policy:
+    figure_count: 2
+    table_count: 2
+    figure_max_height_fraction: 0.70
+    table_max_height_fraction: 0.74
+    default_max_height_fraction: 0.42
+    figure_slots:
+      - "slot_2"
+      - "slot_3"
+    table_slots:
+      - "slot_6"
+      - "slot_5"
+    table_unreadable_strategy: "summarize_as_text"
+  slot_contracts:
+    slot_1:
+      role: "Motivation"
+      content_role: "foundation"
+      visual_policy: "text_only"
+      min_chars: 450
+      target_chars: 500
+      max_chars: 550
+      target_bullets: 4
+      keypoint_ids: [1, 2]
+    slot_2:
+      role: "Stable estimation figure"
+      content_role: "method"
+      visual_policy: "figure_caption"
+      min_chars: 80
+      target_chars: 100
+      max_chars: 120
+      target_bullets: 1
+      keypoint_ids: [3]
+    slot_3:
+      role: "Method or architecture figure"
+      content_role: "method"
+      visual_policy: "figure_caption"
+      min_chars: 80
+      target_chars: 100
+      max_chars: 120
+      target_bullets: 1
+      keypoint_ids: [4]
+    slot_4:
+      role: "Main results with table"
+      content_role: "results"
+      visual_policy: "table_with_callouts"
+      min_chars: 280
+      target_chars: 320
+      max_chars: 360
+      target_bullets: 3
+      keypoint_ids: [9, 10]
+    slot_5:
+      role: "Robustness and results summary"
+      content_role: "results"
+      visual_policy: "text_summary"
+      min_chars: 520
+      target_chars: 590
+      max_chars: 650
+      target_bullets: 5
+      keypoint_ids: [7, 8]
+    slot_6:
+      role: "Method details"
+      content_role: "method"
+      visual_policy: "text_only"
+      min_chars: 430
+      target_chars: 500
+      max_chars: 560
+      target_bullets: 4
+      keypoint_ids: [5, 6]
+
+affiliation_logos:
+  enabled: true
+  max_logos: 3
+  request_timeout_seconds: 8
+  # Skip institutions with no resolvable logo instead of drawing an ugly placeholder
+  # box; the agent then moves on and fills up to max_logos with real logos only.
+  include_placeholders: false
+  clearbit_base_url: "https://logo.clearbit.com"
+  min_logo_long_edge: 320
+  normalized_max_size: [1800, 720]
+  monochrome_logo_color: "#1E3A8A"
+  logo_box_gap: 0.24
+  max_logo_height: 1.95
+  local_dirs:
+    - "affiliation_logos"
+    - "logos"
+  known_domains:
+    "Washington University in St. Louis": "wustl.edu"
+    "Brown School at Washington University in St. Louis": "brownschool.wustl.edu"
+    "George Mason University": "gmu.edu"
+    "Tsinghua University": "tsinghua.edu.cn"
+    "Beijing University of Posts and Telecommunications": "bupt.edu.cn"
+    "The Chinese University of Hong Kong": "cuhk.edu.hk"
+    "University of Illinois Chicago": "uic.edu"
+    "Hong Kong University of Science and Technology (Guangzhou)": "hkust-gz.edu.cn"
+    "Hong Kong University of Science and Technology": "hkust.edu.hk"
+  official_logo_urls:
+    "Beijing University of Posts and Telecommunications":
+      - "https://english.bupt.edu.cn/images/logo.png"
+      - "https://www.bupt.edu.cn/images/logo.png"
+    "The Chinese University of Hong Kong":
+      - "https://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png?20221027"
+    "Hong Kong University of Science and Technology (Guangzhou)":
+      - "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Hong_Kong_University_of_Science_and_Technology_symbol.svg/1280px-Hong_Kong_University_of_Science_and_Technology_symbol.svg.png"
+      - "https://www.hkust-gz.edu.cn/wp-content/themes/hkust-gz/assets/images/logo.svg"
+      - "https://www.hkust-gz.edu.cn/wp-content/themes/hkust-gz/assets/img/logo.svg"
+  known_commons_files:
+    "Washington University in St. Louis": "Washu textlogo.png"
+    "Brown School at Washington University in St. Louis": "Washu textlogo.png"
+    "George Mason University": "George Mason University logo.svg"
+    "Tsinghua University": "Tsinghua University Logo.svg"
+    "Beijing University of Posts and Telecommunications": "BUPT LOGO.png"
+    "The Chinese University of Hong Kong": "CUHK banner.svg"
+    "University of Illinois Chicago": "University of Illinois at Chicago circle logo.svg"
+    "Hong Kong University of Science and Technology": "Hong Kong University of Science and Technology symbol.svg"
+    "Hong Kong University of Science and Technology (Guangzhou)": "Hong Kong University of Science and Technology symbol.svg"
+
+conference_logos:
+  directory: "assets/conference_logos"
+  # Combined layout proportions (when both conf + aff logos present)
+  conf_zone_fraction: 0.48   # fraction of logo region reserved for conf logo
+  divider_width: 0.04        # inches, thin vertical rule between zones
+  divider_gap: 0.22          # inches, padding on each side of divider
+
+visual_refinement:
+  enabled: false
+  max_reflow_count: 1
+  dpi: 300
+  edit_aspect_mismatch_threshold: 0.35
+
+generated_teaser:
+  enabled: false
+  asset_id: "generated_teaser_1"
+  width_px: 1800
+  height_px: 650
+  aspect: 2.7692
+  target_block_height_fraction: 0.65
+  max_block_height_fraction: 0.66
+  portrait_target_block_height_fraction: 0.65
+  portrait_max_block_height_fraction: 0.66
+  summary_text_height_inches: 1.15
+  summary_max_items: 2
+  summary_max_chars: 260
+  portrait_summary_max_items: 1
+  portrait_summary_max_chars: 150
+  layout_max_height_fraction: 0.76
+  portrait_layout_max_height_fraction: 0.68
+  portrait_geometry_safety_inches: 0.45
+  min_aspect: 1.05
+  portrait_min_aspect: 1.55
+  allow_existing_visual: false
+  allow_procedural_fallback: false
+  validation_retry_attempts: 3
+  ocr_timeout_seconds: 15
+  ocr_min_confidence: 45
+  prompt_style: "top-tier AI conference panoramic teaser banner, clean conceptual schematic, polished NeurIPS/ICLR-style visual"
+
+visual_footprint:
+  enabled: true
+  figure_min_width_inches: 10.5
+  figure_min_height_inches: 3.0
+  figure_min_area_inches: 30.0
+  figure_min_slot_width_fraction: 0.62
+  figure_min_slot_height_fraction: 0.18
+  table_min_width_inches: 12.0
+  table_min_height_inches: 3.0
+  table_min_area_inches: 34.0
+  table_min_slot_width_fraction: 0.60
+  table_min_slot_height_fraction: 0.16
+  portrait_figure_min_width_inches: 10.5
+  portrait_figure_min_height_inches: 3.0
+  portrait_figure_min_area_inches: 45.0
+  portrait_figure_min_slot_width_fraction: 0.32
+  portrait_figure_min_slot_height_fraction: 0.10
+  portrait_figure_min_slot_width_inches: 16.0
+  portrait_figure_min_slot_height_inches: 4.8
+  portrait_figure_min_slot_area_inches: 150.0
+  portrait_table_min_width_inches: 10.5
+  portrait_table_min_height_inches: 3.0
+  portrait_table_min_area_inches: 30.0
+  portrait_table_min_slot_width_fraction: 0.30
+  portrait_table_min_slot_height_fraction: 0.08
+  portrait_table_min_slot_width_inches: 20.0
+  portrait_table_min_slot_height_inches: 5.0
+  portrait_table_min_slot_area_inches: 180.0
+  portrait_split_min_aspect: 2.15
+  portrait_split_min_width_inches: 18.0
+  portrait_split_min_height_inches: 4.0
+  portrait_split_visual_width_fraction: 0.72
+  portrait_split_gap_inches: 0.45
+  portrait_split_min_text_width_inches: 8.0
+  portrait_split_bottom_padding_inches: 0.03
+  portrait_split_vertical_alignment: "bottom"
+  feasibility_max_slot_height_fraction: 0.95
+  min_visual_scale_in_visual_blocks: 0.95
+  key_visual_min_scale: 1.0
+
+vlm_layout_review:
+  enabled: false
+  max_iterations: 1
+  template_prior_max_repairs: 1
+  template_prior_accept_after_max_repair: true
+  template_prior_min_accept_score: 70
+  max_move_inches: 0.4
+  container_bottom_padding: 0.2
+  min_font_size: 24
+  max_font_size: 120
+  temperature: 0.1
+  max_tokens: 1600
+  timeout_seconds: 120
+
+block_refinement:
+  enabled: false
+  target_utilization: 0.965
+  acceptable_min: 0.96
+  acceptable_max: 0.992
+  final_min_utilization: 0.96
+  final_mean_utilization: 0.965
+  final_max_bottom_whitespace_inches: 0.08
+  final_max_bottom_whitespace_fraction: 0.006
+  final_max_bottom_whitespace_line_fraction: 1.0
+  final_gate_repair_max_iterations: 1
+  hard_max: 0.995
+  final_max_body_font_size: 44
+  safety_factor: 0.82
+  capacity_min_factor: 0.88
+  capacity_max_factor: 1.08
+  title_height_inches: 1.0
+  title_content_gap_inches: 0.4
+  visual_gap_inches: 0.3
+  section_padding_inches: 0.4
+  min_capacity_chars: 90
+  max_capacity_chars: 900
+  visual_min_text_chars: 90
+  visual_policy_too_small_width_inches: 13.0
+  max_iterations: 3
+  min_extra_chars: 10
+  min_missing_height_for_expand: 0.08
+  vlm_underfilled_min_extra_chars: 120
+  underfilled_min_extra_chars: 70
+  expand_height_safety_inches: 0.14
+  max_extra_chars_per_block: 900
+  teaser_max_extra_chars: 180
+  chars_per_bullet: 120
+  max_new_bullets_per_block: 5
+  rewrite_existing_bullets: true
+  near_line_rewrite_extra_chars: 80
+  second_round_expand_scale: 0.75
+  second_round_max_extra_chars: 260
+  max_text_box_slack_ratio: 2.2
+  max_text_box_slack_inches: 2.0
+  source_context_chars: 7000
+  portrait_ppt_chars_per_inch_at_44pt: 3.0
+  temperature: 0.1
+  max_tokens: 1800
+  timeout_seconds: 120
+
+visual_legibility_review:
+  enabled: false
+  max_relayout_count: 1
+  temperature: 0.1
+  max_tokens: 1600
+  timeout_seconds: 120
+  min_wide_visual_aspect: 2.2
+  max_width_for_wide_visual: 18.0
+  min_table_source_ppi: 72.0
+  hard_min_table_source_ppi: 48.0
+
+adaptive_column_width:
+  enabled: false
+  max_relayout_count: 1
+  min_ratio: 0.75
+  max_ratio: 1.40
+  default_ratios:
+    left:
+      left: 1.20
+      middle: 0.90
+      right: 0.90
+    middle:
+      left: 0.85
+      middle: 1.30
+      right: 0.85
+    right:
+      left: 0.90
+      middle: 0.90
+      right: 1.20
+
+micro_layout_refinement:
+  min_body_font_size: 36
+  min_section_title_font_size: 46
+  min_title_font_size: 72
+  max_body_font_size: 44
+  max_section_title_font_size: 72
+  min_visual_scale: 0.72
+  max_visual_scale: 1.08
+  min_section_gap: 0.2
+  max_section_gap: 1.6
+  min_title_to_content_gap: 0.15
+  min_visual_gap: 0.12
+  min_text_padding: 0.18
+  title_font_shrink_step: 2
+  body_font_shrink_step: 2
+  visual_scale_step: 0.05
+  section_gap_step: 0.15
+  max_iterations: 16
+  target_lane_utilization: 0.965
+  underflow_expand_threshold: 0.08
+  max_underflow_iterations: 10
+  max_body_font_boost: 4
+  max_section_title_font_boost: 6
+  body_font_boost_step: 2
+  title_font_boost_step: 1
+  section_gap_expand_step: 0.12
+  ppt_chars_per_inch_at_44pt: 3.25
+  portrait_ppt_chars_per_inch_at_44pt: 3.0
+  text_height_safety_factor: 1.03
+  text_height_safety_padding: 0.05
+  container_bottom_padding: 0.06
+  min_text_container_bottom_padding_inches: 0.06
+  text_box_overflow_safety_inches: 0.06
+  final_lane_overflow_tolerance_inches: 0.02
+  bottom_takeaway_enabled: false
+  bottom_takeaway_threshold_inches: 0.42
+  bottom_takeaway_height_inches: 0.52
+  bottom_takeaway_bottom_padding_inches: 0.02
+  bottom_takeaway_gap_inches: 0.04
+  bottom_takeaway_font_size: 36
+  bottom_takeaway_font_color: "#4A1020"
+  bottom_takeaway_max_chars: 92
+  bottom_fill_large_gap_threshold_inches: 1.15
+  bottom_fill_item_height_inches: 1.05
+  bottom_fill_item_gap_inches: 0.18
+  bottom_fill_max_items: 5
+  bottom_fill_wide_min_width_inches: 24
+  bottom_fill_font_size: 38
+  bottom_fill_line_spacing: 0.9
+  real_content_fill_enabled: true
+  real_content_fill_portrait_only: false
+  real_content_fill_allow_new_lines: false
+  real_content_fill_allow_teaser_new_lines: true
+  real_content_fill_teaser_max_new_lines: 3
+  real_content_fill_bottom_padding_inches: 0.08
+  portrait_real_content_fill_bottom_padding_inches: 0.08
+  real_content_fill_disable_portrait_bottom_fill: true
+  real_content_fill_threshold_inches: 0.01
+  real_content_fill_target_slack_inches: 0.01
+  portrait_real_content_fill_threshold_inches: 0.04
+  portrait_real_content_fill_target_slack_inches: 0.02
+  real_content_fill_max_sentences: 16
+  real_content_fill_max_chars: 190
+  real_content_fill_max_line_spacing: 1.38
+  real_content_fill_spacing_step: 0.01
+  real_content_fill_max_font_boost: 4
+  use_fast_text_height_measurement: true
+  portrait_split_text_min_fill_fraction: 0.92
+  portrait_split_text_max_fill_sentences: 16
+  portrait_split_text_max_candidate_chars: 170
+  portrait_split_text_min_candidate_chars: 42
+  portrait_split_bottom_target_margin_inches: 0.06
+  wide_text_columns_min_width_inches: 24
+  wide_text_columns_gap_inches: 0.42
+  wide_text_columns_min_height_inches: 2.2
+
+# spacing presets
+spacing_presets:
+  tight:
+    text_margin: 0.03
+    visual_margin: 0.05
+    section_margin: 0.1
+    element_spacing: 0.1
+  
+  normal:
+    text_margin: 0.05
+    visual_margin: 0.1
+    section_margin: 0.15
+    element_spacing: 0.15
+  
+  loose:
+    text_margin: 0.1
+    visual_margin: 0.2
+    section_margin: 0.2
+    element_spacing: 0.2
+
+# column balancing
+column_balancing:
+  target_utilization: 0.9         # 90%
+  overflow_threshold: 1.0
+  underuse_threshold: 0.7
+  max_adjustment_ratio: 0.3       # 30%
+
+# height estimation
+section_estimation:
+  base_title_height: 1.5          # inches
+  bullet_point_height: 0.8
+  visual_spacing_ratio: 0.1
+
+# validation
+validation:
+  max_section_count: 8
+  min_section_count: 5
+  max_title_words: 4
+  min_text_content_items: 2
+  max_llm_attempts: 3
+  
+# utilization thresholds
+utilization_thresholds:
+  overflow_warning: 1.0           # 100%
+  overflow_critical: 1.1          # 110%
+  underutilized: 0.7             # 70%
+  high_visual_density: 0.8       # 80%
+  low_visual_density: 0.2        # 20%
+  
+# layout constants
+layout_constants:
+  title_padding: 0.3              # inches
+  section_padding: 0.3
+  visual_padding: 0.3
+  default_logo_aspect_ratio: 1.0
+  section_bottom_margin: 1.5
+  text_margin_renderer: 0.3
+  
+# powerpoint
+powerpoint:
+  slide_layout_blank: 6
+  debug_border_width_pt: 2
+  text_frame_positioning:
+    default_left: 1
+    default_top: 1
+  
+# indentation
+indentation:
+  secondary_bullet_char: "\u25e6" # ◦
+  secondary_level: 1
+  primary_level: 0
+
+# llm
+llm:
+  temperature: 0.7
+  max_tokens: 4096
+  max_retries: 3

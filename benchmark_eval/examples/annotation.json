@@ -1,0 +1,16 @@
+{
+  "paper_title": "Example Paper Title",
+  "paper_poster_keypoints": [
+    {
+      "id": "kp_1",
+      "key_point": "The paper introduces the main method and its motivation.",
+      "section": "Method"
+    },
+    {
+      "id": "kp_2",
+      "key_point": "Experiments demonstrate the principal quantitative finding.",
+      "section": "Experiments"
+    }
+  ],
+  "reading_order": ["kp_1", "kp_2"]
+}

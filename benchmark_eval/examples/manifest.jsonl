@@ -1,0 +1,2 @@
+{"id":"paper_0001__method_a","method":"Method A","subset":"test","paper_name":"paper_0001","poster_path":"posters/method_a/paper_0001.png","reference_poster_path":"posters/human/paper_0001.png","annotation_path":"annotations/paper_0001.json"}
+{"id":"paper_0001__human","method":"Human","subset":"test","paper_name":"paper_0001","poster_path":"posters/human/paper_0001.png","reference_poster_path":"posters/human/paper_0001.png","annotation_path":"annotations/paper_0001.json"}

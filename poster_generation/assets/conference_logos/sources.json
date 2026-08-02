@@ -1,0 +1,715 @@
+{
+  "records": [
+    {
+      "slug": "cvpr",
+      "file": "assets/conference_logos/cvpr.png",
+      "source_url": "https://cvpr.thecvf.com/static/core/img/cvpr-navbar-logo.svg",
+      "note": "CVPR official navbar SVG",
+      "kind": "svg->png",
+      "size": "1200x295",
+      "bytes": 14254,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "icml",
+      "file": "assets/conference_logos/icml.png",
+      "source_url": "https://icml.cc/static/core/img/ICML-logo.svg",
+      "note": "ICML official SVG",
+      "kind": "svg->png",
+      "size": "1200x415",
+      "bytes": 25856
+    },
+    {
+      "slug": "acl",
+      "file": "assets/conference_logos/acl.png",
+      "source_url": "https://aclanthology.org/images/acl-logo.svg",
+      "note": "ACL Anthology official SVG",
+      "kind": "svg->png",
+      "size": "1200x812",
+      "bytes": 1024
+    },
+    {
+      "slug": "findings_acl",
+      "file": "assets/conference_logos/findings_acl.png",
+      "source_url": "https://aclanthology.org/images/acl-logo.svg",
+      "note": "ACL logo reused for Findings of ACL",
+      "kind": "svg->png",
+      "size": "1200x812",
+      "bytes": 1024
+    },
+    {
+      "slug": "coling",
+      "file": "assets/conference_logos/coling.png",
+      "source_url": "https://coling2025.org/assets/images/logo/logo-full.png",
+      "note": "COLING 2025 official PNG",
+      "kind": "raster->png",
+      "size": "1024x205",
+      "bytes": 62743
+    },
+    {
+      "slug": "colm",
+      "file": "assets/conference_logos/colm.png",
+      "source_url": "https://colmweb.org/static/images/logo.svg",
+      "note": "COLM official SVG",
+      "kind": "svg->png",
+      "size": "1200x629",
+      "bytes": 13489
+    },
+    {
+      "slug": "jmlr",
+      "file": "assets/conference_logos/jmlr.png",
+      "source_url": "https://www.jmlr.org/img/jmlr.jpg",
+      "note": "JMLR site logo image",
+      "kind": "raster->png",
+      "size": "512x245",
+      "bytes": 14023
+    },
+    {
+      "slug": "arxiv",
+      "file": "assets/conference_logos/arxiv.png",
+      "source_url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+      "note": "arXiv official SVG",
+      "kind": "svg->png",
+      "size": "1200x540",
+      "bytes": 2149
+    },
+    {
+      "slug": "f1000research",
+      "file": "assets/conference_logos/f1000research.png",
+      "source_url": "https://f1000research.com/img/research/F1000Research_white_solid.svg",
+      "note": "F1000Research official SVG",
+      "kind": "svg->png",
+      "size": "1200x133",
+      "bytes": 7377,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "plos",
+      "file": "assets/conference_logos/plos.png",
+      "source_url": "https://journals.plos.org/resource/img/logo-plos-footer.png",
+      "note": "PLOS official PNG",
+      "kind": "raster->png",
+      "size": "1023x795",
+      "bytes": 20629,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "bmc",
+      "file": "assets/conference_logos/bmc.png",
+      "source_url": "https://link.springer.com/oscar-static/images/brand-hubs/bmc-logo-45f106ad03.svg",
+      "note": "BMC/Springer Link official SVG",
+      "kind": "svg->png",
+      "size": "1200x293",
+      "bytes": 2086,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "springer_nature",
+      "file": "assets/conference_logos/springer_nature.png",
+      "source_url": "https://www.springernature.com/app-sn/public/images/logo-springernature.svg",
+      "note": "Springer Nature official SVG",
+      "kind": "svg->png",
+      "size": "1200x117",
+      "bytes": 2104
+    },
+    {
+      "slug": "oup",
+      "file": "assets/conference_logos/oup.png",
+      "source_url": "https://corp.oup.com/wp-content/themes/oup-theme/img/university-press-logo.svg",
+      "note": "Oxford University Press official SVG",
+      "kind": "svg->png",
+      "size": "1200x278",
+      "bytes": 7196,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "bioinformatics",
+      "file": "assets/conference_logos/bioinformatics.png",
+      "source_url": "https://corp.oup.com/wp-content/themes/oup-theme/img/university-press-logo.svg",
+      "note": "OUP logo used for Bioinformatics",
+      "kind": "svg->png",
+      "size": "1200x278",
+      "bytes": 7196,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "nucleic_acids_research",
+      "file": "assets/conference_logos/nucleic_acids_research.png",
+      "source_url": "https://corp.oup.com/wp-content/themes/oup-theme/img/university-press-logo.svg",
+      "note": "OUP logo used for Nucleic Acids Research",
+      "kind": "svg->png",
+      "size": "1200x278",
+      "bytes": 7196,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "frontiers",
+      "file": "assets/conference_logos/frontiers.png",
+      "source_url": "https://www.frontiersin.org/favicons/safari-pinned-tab.svg",
+      "note": "Frontiers pinned-tab SVG",
+      "kind": "svg->png",
+      "size": "1200x1200",
+      "bytes": 2476
+    },
+    {
+      "slug": "genome_biology",
+      "file": "assets/conference_logos/genome_biology.png",
+      "source_url": "https://link.springer.com/oscar-static/images/link-bmc-logo-ad8a1301aa.svg",
+      "note": "BMC logo used for Genome Biology",
+      "kind": "svg->png",
+      "size": "1200x300",
+      "bytes": 1901,
+      "postprocess": "white logo recolored to dark for visibility on white backgrounds"
+    },
+    {
+      "slug": "genome_research",
+      "file": "assets/conference_logos/genome_research.png",
+      "source_url": "https://www.biorxiv.org/sites/default/files/cshl_logo_bioarchives.png",
+      "note": "CSHL/Bioarchives logo used for Genome Research source family",
+      "kind": "raster->png",
+      "size": "512x242",
+      "bytes": 11750
+    },
+    {
+      "slug": "biorxiv",
+      "file": "assets/conference_logos/biorxiv.png",
+      "source_url": "https://www.biorxiv.org/sites/default/files/biorxiv_logo_homepage.png",
+      "note": "bioRxiv official PNG",
+      "kind": "raster->png",
+      "size": "1023x355",
+      "bytes": 13630
+    },
+    {
+      "slug": "medrxiv",
+      "file": "assets/conference_logos/medrxiv.png",
+      "source_url": "https://www.medrxiv.org/sites/default/files/medRxiv_homepage_logo.png",
+      "note": "medRxiv official PNG",
+      "kind": "raster->png",
+      "size": "1024x304",
+      "bytes": 13471
+    },
+    {
+      "slug": "ccai",
+      "file": "assets/conference_logos/ccai.png",
+      "source_url": "local:iclr.png",
+      "note": "Workshop/track alias uses parent conference logo: iclr",
+      "kind": "parent-logo-alias",
+      "size": "282x84",
+      "bytes": 6428
+    },
+    {
+      "slug": "climate_change_ai",
+      "file": "assets/conference_logos/climate_change_ai.png",
+      "source_url": "local:iclr.png",
+      "note": "Workshop/track alias uses parent conference logo: iclr",
+      "kind": "parent-logo-alias",
+      "size": "282x84",
+      "bytes": 6428
+    },
+    {
+      "slug": "climate_change_ai_workshop",
+      "file": "assets/conference_logos/climate_change_ai_workshop.png",
+      "source_url": "local:iclr.png",
+      "note": "Workshop/track alias uses parent conference logo: iclr",
+      "kind": "parent-logo-alias",
+      "size": "282x84",
+      "bytes": 6428
+    },
+    {
+      "slug": "counterfactuals_icml",
+      "file": "assets/conference_logos/counterfactuals_icml.png",
+      "source_url": "local:icml.png",
+      "note": "Workshop/track alias uses parent conference logo: icml",
+      "kind": "parent-logo-alias",
+      "size": "1200x415",
+      "bytes": 49837
+    },
+    {
+      "slug": "counterfactuals_in_minds_and_machines",
+      "file": "assets/conference_logos/counterfactuals_in_minds_and_machines.png",
+      "source_url": "local:icml.png",
+      "note": "Workshop/track alias uses parent conference logo: icml",
+      "kind": "parent-logo-alias",
+      "size": "1200x415",
+      "bytes": 49837
+    },
+    {
+      "slug": "gem",
+      "file": "assets/conference_logos/gem.png",
+      "source_url": "local:iclr.png",
+      "note": "Workshop/track alias uses parent conference logo: iclr",
+      "kind": "parent-logo-alias",
+      "size": "282x84",
+      "bytes": 6428
+    },
+    {
+      "slug": "gem_workshop",
+      "file": "assets/conference_logos/gem_workshop.png",
+      "source_url": "local:iclr.png",
+      "note": "Workshop/track alias uses parent conference logo: iclr",
+      "kind": "parent-logo-alias",
+      "size": "282x84",
+      "bytes": 6428
+    },
+    {
+      "slug": "icbinb",
+      "file": "assets/conference_logos/icbinb.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "icbinb_workshop",
+      "file": "assets/conference_logos/icbinb_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "icml_counterfactuals",
+      "file": "assets/conference_logos/icml_counterfactuals.png",
+      "source_url": "local:icml.png",
+      "note": "Workshop/track alias uses parent conference logo: icml",
+      "kind": "parent-logo-alias",
+      "size": "1200x415",
+      "bytes": 49837
+    },
+    {
+      "slug": "machine_learning_and_the_physical_sciences",
+      "file": "assets/conference_logos/machine_learning_and_the_physical_sciences.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "machine_learning_for_structural_biology",
+      "file": "assets/conference_logos/machine_learning_for_structural_biology.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "machine_learning_physical_sciences",
+      "file": "assets/conference_logos/machine_learning_physical_sciences.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ml4ad",
+      "file": "assets/conference_logos/ml4ad.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ml4ad_workshop",
+      "file": "assets/conference_logos/ml4ad_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ml4physical_sciences",
+      "file": "assets/conference_logos/ml4physical_sciences.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ml4physicalsciences",
+      "file": "assets/conference_logos/ml4physicalsciences.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ml_reproducibility_challenge",
+      "file": "assets/conference_logos/ml_reproducibility_challenge.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "mlrc",
+      "file": "assets/conference_logos/mlrc.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "mlsb",
+      "file": "assets/conference_logos/mlsb.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "mlsb_workshop",
+      "file": "assets/conference_logos/mlsb_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "neurips_datasets_and_benchmarks",
+      "file": "assets/conference_logos/neurips_datasets_and_benchmarks.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "neurips_datasets_benchmarks",
+      "file": "assets/conference_logos/neurips_datasets_benchmarks.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "table_representation_learning",
+      "file": "assets/conference_logos/table_representation_learning.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "table_representation_learning_workshop",
+      "file": "assets/conference_logos/table_representation_learning_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "trustworthy_ml",
+      "file": "assets/conference_logos/trustworthy_ml.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ts4h",
+      "file": "assets/conference_logos/ts4h.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "ts4h_workshop",
+      "file": "assets/conference_logos/ts4h_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "tsrml",
+      "file": "assets/conference_logos/tsrml.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "tsrml_workshop",
+      "file": "assets/conference_logos/tsrml_workshop.png",
+      "source_url": "local:neurips.png",
+      "note": "Workshop/track alias uses parent conference logo: neurips",
+      "kind": "parent-logo-alias",
+      "size": "1000x448",
+      "bytes": 65004
+    },
+    {
+      "slug": "wiley",
+      "file": "assets/conference_logos/wiley.png",
+      "source_url": "https://www.wiley.com/content/dam/global/logos/wiley/wiley-logo-footer.svg",
+      "note": "Wiley official footer SVG",
+      "kind": "svg->png",
+      "size": "1200x323",
+      "bytes": 31120
+    },
+    {
+      "slug": "mdpi",
+      "file": "assets/conference_logos/mdpi.png",
+      "source_url": "https://pub.mdpi-res.com/data/mdpi_primary_logo_blue.svg",
+      "note": "MDPI official primary logo SVG",
+      "kind": "svg->png",
+      "size": "1200x801",
+      "bytes": 41504
+    },
+    {
+      "slug": "elsevier",
+      "file": "assets/conference_logos/elsevier.png",
+      "source_url": "https://www.elsevier.com/images/elsevier-logo-orange.svg",
+      "note": "Elsevier official orange SVG",
+      "kind": "svg->png",
+      "size": "1200x337",
+      "bytes": 107316
+    },
+    {
+      "slug": "asbmb",
+      "file": "assets/conference_logos/asbmb.png",
+      "source_url": "https://www.asbmb.org/img/template-images/logo.svg",
+      "note": "ASBMB official SVG",
+      "kind": "svg->png",
+      "size": "1200x314",
+      "bytes": 76164
+    },
+    {
+      "slug": "mary_ann_liebert",
+      "file": "assets/conference_logos/mary_ann_liebert.png",
+      "source_url": "https://cdn.worldvectorlogo.com/logos/mary-ann-liebert.svg",
+      "note": "Mary Ann Liebert vector logo",
+      "kind": "svg->png",
+      "size": "1200x1200",
+      "bytes": 50167
+    },
+    {
+      "slug": "bmj",
+      "file": "assets/conference_logos/bmj.png",
+      "source_url": "https://bmjgroup.com/wp-content/uploads/2024/02/BMJ-Logo-Retina.png",
+      "note": "BMJ Group official logo PNG",
+      "kind": "raster->png",
+      "size": "700x166",
+      "bytes": 29489
+    },
+    {
+      "slug": "the_union",
+      "file": "assets/conference_logos/the_union.png",
+      "source_url": "https://theunion.org/ (inline SVG)",
+      "note": "The Union official inline SVG from homepage",
+      "kind": "inline-svg->png",
+      "size": "1200x287",
+      "bytes": 28966
+    },
+    {
+      "slug": "biology_direct",
+      "file": "assets/conference_logos/biology_direct.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "bmj_open",
+      "file": "assets/conference_logos/bmj_open.png",
+      "source_url": "local:bmj.png",
+      "note": "Source/journal alias uses bmj logo",
+      "kind": "parent-logo-alias",
+      "size": "700x166",
+      "bytes": 29489
+    },
+    {
+      "slug": "cerebral_cortex",
+      "file": "assets/conference_logos/cerebral_cortex.png",
+      "source_url": "local:oup.png",
+      "note": "Source/journal alias uses oup logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x278",
+      "bytes": 34846
+    },
+    {
+      "slug": "conflict_and_health",
+      "file": "assets/conference_logos/conflict_and_health.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "conservation_letters",
+      "file": "assets/conference_logos/conservation_letters.png",
+      "source_url": "local:wiley.png",
+      "note": "Source/journal alias uses wiley logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x323",
+      "bytes": 31120
+    },
+    {
+      "slug": "current_biology",
+      "file": "assets/conference_logos/current_biology.png",
+      "source_url": "local:elsevier.png",
+      "note": "Source/journal alias uses elsevier logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x337",
+      "bytes": 107316
+    },
+    {
+      "slug": "diagnostics",
+      "file": "assets/conference_logos/diagnostics.png",
+      "source_url": "local:mdpi.png",
+      "note": "Source/journal alias uses mdpi logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x801",
+      "bytes": 41504
+    },
+    {
+      "slug": "ecology_and_evolution",
+      "file": "assets/conference_logos/ecology_and_evolution.png",
+      "source_url": "local:wiley.png",
+      "note": "Source/journal alias uses wiley logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x323",
+      "bytes": 31120
+    },
+    {
+      "slug": "human_genomics",
+      "file": "assets/conference_logos/human_genomics.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "international_journal_of_molecular_sciences",
+      "file": "assets/conference_logos/international_journal_of_molecular_sciences.png",
+      "source_url": "local:mdpi.png",
+      "note": "Source/journal alias uses mdpi logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x801",
+      "bytes": 41504
+    },
+    {
+      "slug": "journal_of_biomedical_semantics",
+      "file": "assets/conference_logos/journal_of_biomedical_semantics.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "journal_of_computational_biology",
+      "file": "assets/conference_logos/journal_of_computational_biology.png",
+      "source_url": "local:mary_ann_liebert.png",
+      "note": "Source/journal alias uses mary_ann_liebert logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x1200",
+      "bytes": 50167
+    },
+    {
+      "slug": "journal_of_translational_medicine",
+      "file": "assets/conference_logos/journal_of_translational_medicine.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "microbiome",
+      "file": "assets/conference_logos/microbiome.png",
+      "source_url": "local:bmc.png",
+      "note": "Source/journal alias uses bmc logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x293",
+      "bytes": 26215
+    },
+    {
+      "slug": "molecular_cellular_proteomics",
+      "file": "assets/conference_logos/molecular_cellular_proteomics.png",
+      "source_url": "local:asbmb.png",
+      "note": "Source/journal alias uses asbmb logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x314",
+      "bytes": 76164
+    },
+    {
+      "slug": "parasitology_research",
+      "file": "assets/conference_logos/parasitology_research.png",
+      "source_url": "local:springer_nature.png",
+      "note": "Source/journal alias uses springer_nature logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x117",
+      "bytes": 18350
+    },
+    {
+      "slug": "psychopharmacology",
+      "file": "assets/conference_logos/psychopharmacology.png",
+      "source_url": "local:springer_nature.png",
+      "note": "Source/journal alias uses springer_nature logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x117",
+      "bytes": 18350
+    },
+    {
+      "slug": "public_health_action",
+      "file": "assets/conference_logos/public_health_action.png",
+      "source_url": "local:the_union.png",
+      "note": "Source/journal alias uses the_union logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x287",
+      "bytes": 28966
+    },
+    {
+      "slug": "acs",
+      "file": "assets/conference_logos/acs.png",
+      "source_url": "https://cdn.worldvectorlogo.com/logos/acs-8.svg",
+      "note": "ACS vector logo; ACS official downloadable brand assets require login",
+      "kind": "svg->png",
+      "size": "1200x1200",
+      "bytes": 86862
+    },
+    {
+      "slug": "acs_publications",
+      "file": "assets/conference_logos/acs_publications.png",
+      "source_url": "local:acs.png",
+      "note": "Source/journal alias uses ACS logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x1200",
+      "bytes": 86862
+    },
+    {
+      "slug": "journal_of_chemical_information_and_modeling",
+      "file": "assets/conference_logos/journal_of_chemical_information_and_modeling.png",
+      "source_url": "local:acs.png",
+      "note": "Source/journal alias uses ACS logo",
+      "kind": "parent-logo-alias",
+      "size": "1200x1200",
+      "bytes": 86862
+    }
+  ],
+  "errors": []
+}
