@@ -1,0 +1,43 @@
+# Poster block extractor demo configuration.
+# Replace placeholder values with environment-specific credentials before running MinerU or VLM calls.
+
+extractor: "mineru"  # "mineru" or "ppocr"
+
+llm:
+  base_url: "${POSTERMELD_VLM_BASE_URL}"
+  api_key: "${POSTERMELD_VLM_API_KEY}"
+  vlm_model: "gpt-4o"
+  max_tokens: 8192
+  temperature: 0.1
+
+mineru:
+  base_url: "https://mineru.net/api/v4"
+  token: "${MINERU_TOKEN}"
+  model_version: "vlm"
+  is_ocr: true
+  enable_table: true
+  enable_formula: true
+  language: "en"
+  poll_interval: 3
+  max_poll_time: 300
+
+ppocr:
+  lang: "en"
+  use_angle_cls: true
+  det_db_thresh: 0.3
+  min_image_area_ratio: 0.005
+
+paths:
+  poster_dir: "./data/posters"
+  example_poster: "./data/example_poster.png"
+  output_dir: "./output"
+
+output:
+  visualize: false
+
+batch:
+  concurrency: 4
+
+preprocess:
+  min_short_edge: 1500
+  max_long_edge: 8000

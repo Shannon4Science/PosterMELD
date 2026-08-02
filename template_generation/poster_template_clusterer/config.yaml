@@ -1,0 +1,28 @@
+# Poster template clusterer demo configuration.
+
+input:
+  blocks_json_dir: "../poster_block_extractor/output/blocks_json"
+  posters_dir: "../poster_block_extractor/data/posters"
+
+output:
+  dir: "./output"
+
+features:
+  occupancy_grid_size: 12
+  occupancy_weight: 1.5
+
+cluster:
+  method: "ward"
+  default_k: 8
+
+viz:
+  num_representatives: 6
+  thumb_max_side: 400
+
+template:
+  top_m_for_template: 1
+  slot_iou_threshold: 0.30
+  slot_min_freq: 0.30
+  min_keep_ratio: 0.40
+  morph_gap: 10.0
+  canvas_size: 1000
