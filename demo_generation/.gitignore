@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime outputs
+output/
+*_output/
+output_*/
+visualized/
+blocks_json/
+cluster_grids/
+templates/
+checkpoint.json
+failures.log
+
+# Local secrets and overrides
+.env
+*.local.yaml
+config.local.yaml
