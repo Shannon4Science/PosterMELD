@@ -14,12 +14,14 @@
 
   <p>
     <a href="https://jackey0903.github.io/PosterMELD/"><strong>Project Page</strong></a>
+    · <a href="https://arxiv.org/abs/2608.02218"><strong>Paper</strong></a>
     · <a href="poster_generation/"><strong>Poster Generation</strong></a>
     · <a href="benchmark_eval/"><strong>Benchmark Evaluation</strong></a>
     · <a href="#quick-start"><strong>Quick Start</strong></a>
   </p>
 
   <p>
+    <a href="https://arxiv.org/abs/2608.02218"><img src="https://img.shields.io/badge/arXiv-2608.02218-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv 2608.02218" /></a>
     <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11" />
     <img src="https://img.shields.io/badge/Output-Editable_PPTX-0B7A75?style=flat-square&logo=microsoftpowerpoint&logoColor=white" alt="Editable PPTX output" />
     <img src="https://img.shields.io/badge/Templates-24-7256B8?style=flat-square" alt="24 templates" />
