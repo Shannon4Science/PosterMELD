@@ -1,0 +1,9 @@
+interface:
+  display_name: "PosterMELD"
+  short_description: "Run the complete editable academic-poster pipeline"
+  icon_small: "./assets/postermeld-logo.svg"
+  icon_large: "./assets/postermeld-logo.svg"
+  brand_color: "#0B5D6B"
+  default_prompt: "Use $postermeld to generate a polished editable poster from this research PDF with the complete quality pipeline."
+policy:
+  allow_implicit_invocation: true

@@ -17,6 +17,7 @@
     · <a href="https://arxiv.org/abs/2608.02218"><strong>Paper</strong></a>
     · <a href="poster_generation/"><strong>Poster Generation</strong></a>
     · <a href="benchmark_eval/"><strong>Benchmark Evaluation</strong></a>
+    · <a href="skills/postermeld/"><strong>Agent Skill</strong></a>
     · <a href="#quick-start"><strong>Quick Start</strong></a>
   </p>
 
@@ -44,6 +45,8 @@ The repository is organized as two independently runnable modules:
 |---|---|---|
 | [`poster_generation/`](poster_generation/) | End-to-end PDF-to-PPTX/PNG generation pipeline, including prompts, templates, assets, configuration, scripts, and regression tests | `python -m src.workflow.pipeline` or `postermeld` |
 | [`benchmark_eval/`](benchmark_eval/) | Standalone PRR/CHE, Universal Score, and Keypoint BERTScore evaluation code | `python -m prr_che.evaluate`, `python -m universal_score.evaluate`, and `python -m keypoint_bertscore.*` |
+
+[`skills/postermeld/`](skills/postermeld/) is a lightweight Codex and Claude Code interface. It installs and invokes the complete generation module instead of maintaining a reduced agent-only renderer.
 
 README and paper figures are kept in [`docs/readme/`](docs/readme/), while the full interactive presentation is available on the [project page](https://jackey0903.github.io/PosterMELD/).
 
@@ -110,7 +113,28 @@ The same paper can produce materially different, valid poster designs while pres
 
 ## Quick Start
 
-### Generate a poster
+### Agent Skill
+
+Install the lightweight Skill in Codex:
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo Shannon4Science/PosterMELD \
+  --path skills/postermeld
+```
+
+For Claude Code, place the same [`skills/postermeld/`](skills/postermeld/) directory at `~/.claude/skills/postermeld`.
+
+Then ask the host agent:
+
+```text
+Use $postermeld to generate a polished editable poster from /absolute/path/paper.pdf.
+Use the complete visual pipeline with teaser, background, logos, and VLM review.
+```
+
+The Skill performs environment checks, installs or locates the complete PosterMELD runtime, starts the original pipeline, streams its log, and returns the final PNG and editable PPTX. Full-quality generation still requires the model, VLM, image-generation, and MinerU services listed in [`poster_generation/.env.example`](poster_generation/.env.example); the Skill never hides a missing service behind a reduced-quality fallback.
+
+### Manual generation
 
 ```bash
 git clone https://github.com/Shannon4Science/PosterMELD.git
@@ -183,6 +207,7 @@ PosterMELD was evaluated end-to-end on 621 papers across 14 publication-source g
 
 ```text
 PosterMELD/
+├── skills/postermeld/        Codex and Claude Code interface to the full runtime
 ├── poster_generation/        complete generation subproject
 │   ├── assets/               conference and bundled visual assets
 │   ├── config/               prompts and pipeline configuration
