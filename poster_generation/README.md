@@ -13,7 +13,7 @@
   </p>
 
   <p>
-    <a href="https://jackey0903.github.io/PosterMELD/"><strong>Project Page</strong></a>
+    <a href="https://imhaojie.github.io/PosterMELD/"><strong>Project Page</strong></a>
     · <a href="https://arxiv.org/abs/2608.02218"><strong>Paper</strong></a>
     · <a href="#quick-start"><strong>Quick Start</strong></a>
     · <a href="#method"><strong>Method</strong></a>
@@ -117,7 +117,7 @@ The benchmark contains **621 papers**, covering **14 publication-source groups**
   <img src="../docs/readme/case-study.png" width="100%" alt="Qualitative comparison of P2P, PosterGen, GPT-Image-2, and PosterMELD on five papers" />
 </p>
 
-Across five research areas, PosterMELD varies template topology, palette, and text-figure allocation while preserving native editability. The full-resolution comparison is also available on the [project page](https://jackey0903.github.io/PosterMELD/).
+Across five research areas, PosterMELD varies template topology, palette, and text-figure allocation while preserving native editability. The full-resolution comparison is also available on the [project page](https://imhaojie.github.io/PosterMELD/).
 
 ## Quick Start
 
