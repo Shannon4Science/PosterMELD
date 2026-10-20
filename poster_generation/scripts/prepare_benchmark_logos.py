@@ -505,7 +505,7 @@ class LogoResolver:
         self.session = requests.Session()
         self.session.headers.update(
             {
-                "User-Agent": "PosterMELD/1.0 (https://github.com/Jackey0903/PosterMELD)",
+                "User-Agent": "PosterMELD/1.0 (https://github.com/Shannon4Science/PosterMELD)",
                 "Accept-Language": "en-US,en;q=0.8",
             }
         )
