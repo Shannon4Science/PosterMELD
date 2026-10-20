@@ -13,7 +13,7 @@
   </p>
 
   <p>
-    <a href="https://jackey0903.github.io/PosterMELD/"><strong>Project Page</strong></a>
+    <a href="https://imhaojie.github.io/PosterMELD/"><strong>Project Page</strong></a>
     · <a href="https://arxiv.org/abs/2608.02218"><strong>Paper</strong></a>
     · <a href="poster_generation/"><strong>Poster Generation</strong></a>
     · <a href="benchmark_eval/"><strong>Benchmark Evaluation</strong></a>
@@ -48,7 +48,7 @@ The repository is organized as two independently runnable modules:
 
 [`skills/postermeld/`](skills/postermeld/) is a lightweight Codex and Claude Code interface. It installs and invokes the complete generation module instead of maintaining a reduced agent-only renderer.
 
-README and paper figures are kept in [`docs/readme/`](docs/readme/), while the full interactive presentation is available on the [project page](https://jackey0903.github.io/PosterMELD/).
+README and paper figures are kept in [`docs/readme/`](docs/readme/), while the full interactive presentation is available on the [project page](https://imhaojie.github.io/PosterMELD/).
 
 ## Highlights
 
